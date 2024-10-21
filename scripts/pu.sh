@@ -1,8 +1,11 @@
 #!/bin/bash
 
 # Git Commit Importance Script
+# - I made made this script over the summer holidays for my other git projects: alfie-ns
+# - 'read -rsn1' will read a single character immediately without the need to press enter
+# - '>&2' is used to redirect output to stderr thus only echoing the importance and custom message to the commit
 
-set -e  # Exit immediately if a command exits with a non-zero status
+set -e  # Exit immediately if a command exits with a non-zero status; this'll prevent an error being committed
 
 # Function to print bold text
 print_bold() {
@@ -81,10 +84,10 @@ if git commit -m "$commit_message"; then
     if git push origin main; then
         echo -e '\nLocal repo pushed to remote origin\n' >&2
         print_bold "Commit message: $commit_message" >&2
-        exit 0
+        exit 0 #success
     else
         echo "Error: Failed to push to remote..." >&2
-        exit 1
+        exit 1 #failure
     fi
 else
     echo "Error: Failed to commit changes..." >&2
