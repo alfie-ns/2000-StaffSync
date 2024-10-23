@@ -2,7 +2,6 @@
 
 **•	/Users/oladeanio/AndroidStudioProjects/ -> Android Studio Projects location**
 
-
 **•	res/layout/activity_main.xml -> Open UI design on right side**
 
 **•	app/src/main/java/com.example.{project}/ -> Java files**
@@ -22,3 +21,16 @@
 **•	app/src/main/res/menu/ -> Menu files**
 
 **•	app/src/main/res/drawable-v24/ic_launcher_foreground.xml -> Icon file**
+
+## Commands
+
+`⌃r` -> run app
+
+`double-tap Shift` -> search everywhere
+
+`⌥⌘L` -> reformat code
+
+`⌘⇧S` -> save all
+
+`⌘⇧F8` -> set breakpoint
+
